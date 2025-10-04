@@ -1,8 +1,31 @@
+:root{
+  --text-light-color:rgb(0, 0, 0);
+  --background-light-color: rgb(255, 255, 255);
+
+  --text-dark-color: rgb(252, 251, 251);
+  --background-dark-color: rgb(53, 51, 51);
+}
+
+
 .main {
   text-align: center;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: var(--background-light-color);
+  color: var(--text-light-color);
 }
+
+.main.darkmode{
+  background-color: var(--background-dark-color);
+  color: var(--text-dark-color);
+}
+
+.header{
+  background-color: brown;
+}
+.main.darkmode .header{
+  background-color: rgb(32, 32, 184);
+  color:rgb(0, 0, 0)
+}
+
 
 .lists {
   list-style-position: outside;
@@ -11,3 +34,16 @@
   border: 1px;
   border-color: bisque;
 }
+
+.button {
+  background-color:darkgray;
+  border: 1px solid rgb(128, 128, 128);
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+
