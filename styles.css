@@ -1,0 +1,13 @@
+.main {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.lists {
+  list-style-position: outside;
+  display: inline-block; 
+  text-align: left;
+  border: 1px;
+  border-color: bisque;
+}
